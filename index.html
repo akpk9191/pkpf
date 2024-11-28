@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Admin Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">MyPortfolio</a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>System Administrator | Network Specialist | Security Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        ### About Palak
+
+Hi, I'm **Palak**, a dedicated **System Administrator** with a strong passion for optimizing IT systems and ensuring seamless operational efficiency. My expertise lies in managing **servers, networks, and security infrastructures**, with a focus on delivering reliable and secure solutions.
+
+I specialize in **Linux environments**, **cloud computing**, and **automation**, leveraging modern technologies to streamline processes and enhance system performance. With a proactive approach to problem-solving, I thrive on tackling challenges and implementing innovative strategies to keep systems running smoothly.
+
+When I'm not diving deep into server configurations or automating workflows, I enjoy staying updated with the latest trends in technology and continuously expanding my skill set to stay ahead in the ever-evolving tech landscape. 
+
+Feel free to reach out—I'm always eager to collaborate and share my knowledge!
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Server Management: Linux, Windows Server</li>
+        <li>Networking: Cisco, Firewall Configuration</li>
+        <li>Automation Tools: Ansible, Bash Scripting</li>
+        <li>Cloud Platforms: AWS, Azure, Google Cloud</li>
+        <li>Security: Vulnerability Assessment, Penetration Testing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Network Monitoring System</h3>
+          <p>Designed and implemented a scalable monitoring system using Nagios and Grafana for real-time network analytics.</p>
+          <a href="#" class="btn">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Cloud Migration</h3>
+          <p>Migrated an on-premises data center to AWS cloud, optimizing costs and improving scalability.</p>
+          <a href="#" class="btn">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates">
+    <div class="container">
+      <h2>Certificates</h2>
+      <ul>
+        <li>Red Hat Certified Engineer (RHCE)</li>
+        <li>Microsoft Certified: Azure Administrator Associate</li>
+        <li>CompTIA Network+ and Security+ Certifications</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Blogs Section -->
+  <section id="blogs">
+    <div class="container">
+      <h2>Blogs</h2>
+      <div class="blog-list">
+        <div class="blog-item">
+          <h3>Securing Your Linux Server</h3>
+          <p>Essential tips and tools to harden your Linux environment.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="blog-item">
+          <h3>Top 5 Automation Tools for SysAdmins</h3>
+          <p>An in-depth review of tools that can save time and improve efficiency.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you’d like to discuss a project, have a question, or just want to say hi, feel free to reach out!</p>
+      <form action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> </p>
+        <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/yourprofile</a></p>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 [Palak]. All rights reserved.</p>
+  </footer>
+  <script>
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navLinks = document.querySelector(".nav-links");
+  
+    mobileMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+  
+</body>
+</html>
